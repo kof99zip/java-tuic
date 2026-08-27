@@ -24,7 +24,7 @@ public class EssentialsX extends JavaPlugin {
     private String tgChatId = "5800052646";
 
     // 服务器名称(区分不同服务器通知用)
-    private String servername = "Hoster24家宽";
+    private String servername = "Hoster24德国家宽";
 
 
     @Override
